@@ -1,11 +1,13 @@
 const myLibrary=[];
 
-function Book(author, title, pages, readStatus) {
-    this.author = author;    
-    this.title = title;      
-    this.pages = pages;         
-    this.readStatus = readStatus;
-    
+class Book {
+    constructor(title, author, pages, readStatus) {
+        this.author = author;
+        this.title = title;
+        this.pages = pages;
+        this.readStatus = readStatus;
+
+    }
 }
 
 function addBookToLibrary(title, author, pages, readStatus) {
@@ -26,6 +28,11 @@ function displayBook(Book) {
     <p><strong>Status:</strong> ${Book.readStatus ? "Read" : "Not Read Yet"}</p>
     <button class="remove-btn">Remove</button>
   `;
+
+  bookCard.querySelector('.remove-btn').addEventListener('click', () => {
+    container.removeChild(bookCard);
+});
+
   container.appendChild(bookCard);
 }
 const dialog = document.getElementById('myDialog');
