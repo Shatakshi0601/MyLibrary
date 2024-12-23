@@ -1,6 +1,27 @@
+body {
+    background-color:pink;
+}
+
+#header {
+    padding-left: 40%;
+}
+
+#header > h1 {
+    color:blue;
+    font-size: xx-large;
+}
+
+#add-newbook-btn {
+    padding:10px;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+}
+
 dialog {
     border: 1px solid #131212;
     border-radius: 8px;
     padding: 20px;
     width: 300px;
   }
+
