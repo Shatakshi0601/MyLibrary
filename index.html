@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="header">
+        <h1>The Library</h1>
+        <button id="add-newbook-btn">Add New Book</button>
+    </div>
+    <dialog id="myDialog">
+        <h1>Add New Book</h1>
+        <form method="dialog">
+            <label for="new-title">Title:</label>
+            <input type="text" name="title" id="new-title" required><br><br>
+            <label for="new-author">Author:</label>
+            <input type="text" name="author" id="new-author" required><br><br>
+            <label for="new-pages">Pages:</label>
+            <input type="text" name="pages" id="new-pages" required><br><br>
+            <label for="new-read">Read?</label>
+            <input type="checkbox" name="read" id="new-read" required><br><br>
+            <button type="submit" id="add-btn">Add</button><br><br>
+            <button type="button" id="dialog-close">Close</button><br><br>
+        </form>
+    </dialog>
+    <div id="container">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
