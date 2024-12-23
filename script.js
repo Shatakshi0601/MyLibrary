@@ -8,18 +8,6 @@ function addBookToLibrary() {
 
 }
 
-function displayBooks() {
-
-
-
-
-const title=document.getElementById('new-title');
-myLibrary.appendChild(title)
-
-
-
-}
-
 
 const dialog = document.getElementById('myDialog');
 
